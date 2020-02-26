@@ -11,9 +11,16 @@
     border-radius: 16px;
     background-color:#EAECF3;
 }
+.button-style{
+    background: transparent linear-gradient(71deg, #8F17EC 0%, #2B74E7 100%) 0% 0% no-repeat padding-box;
+    border-radius: 25px;
+    width: 120px;
+    height: 40px;
+}
 .uu{
-    background: transparent linear-gradient(113deg, #A061FF 0%, #7406F3 100%) ;
-    border-radius: 20px;
+    background: linear-gradient(115deg, #01B938 0%, #41DC4E 100%) ;
+    border-radius: 10px;
+    opacity: 0.4;
 }
 .icon-style{
     position: absolute;
@@ -21,6 +28,7 @@
     right: 200px;
     opacity: 0.4;
     font-size: 8rem;
+    z-index: -1;
 }
 .circle{
     width: 20px;

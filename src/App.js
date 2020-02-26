@@ -1,7 +1,7 @@
 import React from 'react';
 import './MONTA.CSS'
 import {SideBar} from './sideBar/SideBar'
-import {ChartPannel} from "./mainPannel/ChartPannel";
+import {ChartPannel} from "./mainPannel/chartPannel/ChartPannel";
 import {MainPannel} from "./mainPannel/MainPannel";
 function App() {
   return (
