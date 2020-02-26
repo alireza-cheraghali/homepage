@@ -1,11 +1,13 @@
 import React from 'react';
 import './MONTA.CSS'
 import {SideBar} from './sideBar/SideBar'
+import {ChartPannel} from "./mainPannel/ChartPannel";
+import {MainPannel} from "./mainPannel/MainPannel";
 function App() {
   return (
-    <div>
+    <div style={{position:"relative"}}>
       <SideBar/>
-      <p className='has-text-danger'>sa</p>
+      <MainPannel/>
     </div>
   );
 }

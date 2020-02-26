@@ -1,3 +1,38 @@
 .color-background-sidebar{
     background-color: #FCFCFC
 }
+.is-90x90{
+    width: 90px;
+    height: 90px;
+}
+.chartbutton{
+    width: 66px;
+    height: 27px;
+    border-radius: 16px;
+    background-color:#EAECF3;
+}
+.uu{
+    background: transparent linear-gradient(113deg, #A061FF 0%, #7406F3 100%) ;
+    border-radius: 20px;
+}
+.icon-style{
+    position: absolute;
+    top: 32px;
+    right: 200px;
+    opacity: 0.4;
+    font-size: 8rem;
+}
+.circle{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #FF445E;
+    color: white;
+}
+.icons-box{
+    width: 98px;
+    height: 78px;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    margin-left: 30px;
+}
