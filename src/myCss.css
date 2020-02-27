@@ -11,16 +11,28 @@
     border-radius: 16px;
     background-color:#EAECF3;
 }
+option{
+font-size: 12px;
+}
+.arrow-position{
+    position: absolute;
+    left: 51px;
+    top: 18.5px;
+    z-index: 1;
+}
 .button-style{
     background: transparent linear-gradient(71deg, #8F17EC 0%, #2B74E7 100%) 0% 0% no-repeat padding-box;
     border-radius: 25px;
     width: 120px;
     height: 40px;
 }
-.uu{
-    background: linear-gradient(115deg, #01B938 0%, #41DC4E 100%) ;
-    border-radius: 10px;
-    opacity: 0.4;
+.coursereviews-style{
+    width: 163px;
+    height: 80px;
+    background: #EBEDF1 ;
+    border-radius: 20px;
+    color: #98989F;
+    margin: 1.5rem 0.5rem 0rem 0.5rem;
 }
 .icon-style{
     position: absolute;
@@ -30,12 +42,26 @@
     font-size: 8rem;
     z-index: -1;
 }
+.coursereviews-icon-position{
+    font-size: 6rem;
+    opacity: 0.2;
+    position: absolute;
+    left: 0px;
+    bottom: -10px;
+}
 .circle{
     width: 20px;
     height: 20px;
     border-radius: 50%;
     background-color: #FF445E;
     color: white;
+}
+.purple-circle{
+    background:#EBEDF1;
+    width: 16px;
+    height: 16px;
+    border: 2px solid #A061FF;
+    border-radius: 50%;
 }
 .icons-box{
     width: 98px;

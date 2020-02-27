@@ -14,7 +14,7 @@ export function MiddleMainPannel() {
                     <button className='button button-style is-medium has-text-weight-boldest has-text-white '>قهرمان شو</button>
                     </div>
                 </div>
-                <div className='column panel color-background-sidebar'>
+                <div className='column panel color-background-sidebar is-6'style={{height:288,borderRadius:30}}>
                     <div className='columns'>
                         <div className='column is-flex-row-start is-6 half-space-right'>
                             <span className='mi-calendar is-size-4'/>
@@ -26,6 +26,23 @@ export function MiddleMainPannel() {
                                 <span className='mi-arrow-down is-flex-row-end half-space-right'/>
                             </a>
                         </div>
+                    </div>
+                    <div className='columns is-multiline'>
+                        <button className='column is-narrow half-space-right button coursereviews-style'>
+                            <div className='columns'>
+                                <div className='column is-paddingless'>
+                                    <div>برگزاری</div>
+                                    <div className='is-flex-row-center'>
+                                        <span className='has-text-weight-boldest is-size-4 has-text-black'style={{fontSize:30}}>0</span>
+                                        <span className='half-space-right purple-circle'></span>
+                                    </div>
+                                    <div className='has-text-black is-size-6 has-text-weight-bold'>کل 124</div>
+                                </div>
+                                <div className='column m--position-relative'>
+                                    <span className='mi-like coursereviews-icon-position'/>
+                                </div>
+                            </div>
+                        </button>
                     </div>
                 </div>
             </div>
