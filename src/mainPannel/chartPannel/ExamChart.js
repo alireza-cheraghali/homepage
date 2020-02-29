@@ -1,14 +1,25 @@
-import React from "react";
+import React, {createContext, useContext, useEffect, useState} from "react";
 import Highcharts from "highcharts";
 import HighchartsReact from "highcharts-react-official";
+import {sendDataToChart} from './ChartPannel'
+import axios from 'axios'
 export function ExamChart() {
+    var giveDataFromChart=useContext(sendDataToChart)
+    /*var [number,setnumber]=useState();
+    useEffect(()=>{
+        axios.get('http://localhost:3001/chart').then(res=>{
+            const response=res.data.Numbers;
+            console.log(response);
+            setnumber(response)
+        });
+    },[]);*/
+
     const options={
         chart: {
             type: 'areaspline',
-            width:'300',
+            width:'330',
             height:'150',
             borderRadius:20,
-            /*plotBackgroundImage:'https://www.highcharts.com/samples/graphics/skies.jpg',*/
             style:{
                 zIndex:0
             },
@@ -35,7 +46,6 @@ export function ExamChart() {
         yAxis:{
             visible: false,
         },
-
         plotOptions: {
             style:{
                 zIndex:2
@@ -57,13 +67,44 @@ export function ExamChart() {
         series: [{
             showInLegend:false,
             color:'white',
-            data: [
-                1,5,4,9,3,7,15
-            ]
-        }]
+            data: giveDataFromChart,
+        }],
+        responsive: {
+            rules: [{
+                condition: {
+                    maxWidth: 425
+                },
+                chartOptions: {
+                    legend: {
+                        align: 'center',
+                        verticalAlign: 'bottom',
+                        layout: 'horizontal'
+                    },
+                    yAxis: {
+                        labels: {
+                            align: 'left',
+                            x: 0,
+                            y: -5
+                        },
+                        title: {
+                            text: null
+                        }
+                    },
+                    subtitle: {
+                        text: null
+                    },
+                    credits: {
+                        enabled: false
+                    }
+                }
+            }]
+        }
     };
     return(
+        <div >
         <HighchartsReact  highcharts={Highcharts} options={options}/>
+
+        </div>
     )
 
 }

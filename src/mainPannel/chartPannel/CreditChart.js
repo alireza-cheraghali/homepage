@@ -1,11 +1,13 @@
-import React from "react";
+import React, {useContext} from "react";
 import Highcharts from "highcharts";
 import HighchartsReact from "highcharts-react-official";
+import {sendDataToChart} from "./ChartPannel";
 export function CreditChart() {
+    var giveDataFromChart=useContext(sendDataToChart)
     const options={
         chart: {
             type: 'areaspline',
-            width:'300',
+            width:'330',
             height:'150',
             borderRadius:20,
             /*plotBackgroundImage:'https://www.highcharts.com/samples/graphics/skies.jpg',*/
@@ -51,10 +53,38 @@ export function CreditChart() {
         series: [{
             showInLegend:false,
             color:'white',
-            data: [
-                12,14,1,5,2,9,10
-            ]
-        }]
+            data: giveDataFromChart
+        }],
+        responsive: {
+            rules: [{
+                condition: {
+                    maxWidth: 425
+                },
+                chartOptions: {
+                    legend: {
+                        align: 'center',
+                        verticalAlign: 'bottom',
+                        layout: 'horizontal'
+                    },
+                    yAxis: {
+                        labels: {
+                            align: 'left',
+                            x: 0,
+                            y: -5
+                        },
+                        title: {
+                            text: null
+                        }
+                    },
+                    subtitle: {
+                        text: null
+                    },
+                    credits: {
+                        enabled: false
+                    }
+                }
+            }]
+        }
     };
     return(
         <HighchartsReact  highcharts={Highcharts} options={options}/>

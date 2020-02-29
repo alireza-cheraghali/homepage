@@ -16,7 +16,7 @@ font-size: 12px;
 }
 .arrow-position{
     position: absolute;
-    left: 51px;
+    left: 27px;
     top: 18.5px;
     z-index: 1;
 }
@@ -26,13 +26,38 @@ font-size: 12px;
     width: 120px;
     height: 40px;
 }
+.mainpannel-style{
+    position:absolute;
+    right:420px;
+    width:1060px;
+    margin:20px;
+}
 .coursereviews-style{
-    width: 163px;
-    height: 80px;
+    width: 181px;
+    height: 90px;
     background: #EBEDF1 ;
     border-radius: 20px;
     color: #98989F;
     margin: 1.5rem 0.5rem 0rem 0.5rem;
+    text-align: justify;
+}
+.right-middle-pannel{
+    width: 43%;
+    flex: none;
+}
+.left-middle-pannel{
+    width: 56%;
+    flex: none;
+    height:288px;
+    border-radius:30px
+}
+.coursereviews-arrow-up-style{
+    font-size: 30px;
+    color: #10A962;
+}
+.coursereviews-arrow-down-style{
+    font-size: 30px;
+    color: #FF0C6F;
 }
 .icon-style{
     position: absolute;
@@ -40,10 +65,10 @@ font-size: 12px;
     right: 200px;
     opacity: 0.4;
     font-size: 8rem;
-    z-index: -1;
+    z-index: 2;
 }
 .coursereviews-icon-position{
-    font-size: 6rem;
+    font-size: 7rem;
     opacity: 0.2;
     position: absolute;
     left: 0px;
@@ -55,6 +80,15 @@ font-size: 12px;
     border-radius: 50%;
     background-color: #FF445E;
     color: white;
+}
+.lolo{
+    position: absolute;
+    right: 0px;
+    top: 5px;
+    background-color: white;
+    z-index: 5;
+    width: 364px;
+    height: auto;
 }
 .purple-circle{
     background:#EBEDF1;
@@ -69,4 +103,90 @@ font-size: 12px;
     background-color: #FFFFFF;
     border-radius: 10px;
     margin-left: 30px;
+}
+.navbar-style-clicked{
+    width: 220px;
+    height: 50px;
+    background: #212126 ;
+    border-radius: 25px;
+    color: white;
+    opacity: 1;
+}
+.navbar-style{
+    width: 220px;
+    height: 50px;
+    background: #FCFCFC ;
+    border-radius: 25px;
+    color: black;
+    opacity: 1;
+}
+.navbar-dropdown{
+    position: relative;
+    min-width: auto;
+    right: 10px;
+    top: -10px;
+}
+.is-font-size-15{
+    font-size: 13px;
+}
+@media screen and (max-width: 425px){
+    .mainpannel-style{
+        position:absolute;
+        right:0px;
+        width:auto;
+        margin:20px;
+    }
+    .coursereviews-icon-position{
+        font-size: 7rem;
+        opacity: 0.2;
+        position: absolute;
+        left: 0px;
+        bottom: 10px;
+    }
+    .left-middle-pannel{
+        width: auto;
+        flex: none;
+        height:auto;
+        border-radius:30px
+    }
+    .coursereviews-style{
+        width: -webkit-fill-available;
+        height: 90px;
+        background: #EBEDF1 ;
+        border-radius: 20px;
+        color: #98989F;
+        margin: 1.5rem 0.5rem 0rem 0.5rem;
+        text-align: justify;
+    }
+}
+@media screen and (width: 768px){
+    .mainpannel-style{
+        position:absolute;
+        right:0px;
+        width:auto;
+        margin:20px;
+    }
+    .coursereviews-icon-position{
+        font-size: 7rem;
+        opacity: 0.2;
+        position: absolute;
+        left: 0px;
+        bottom: 12px;
+    }
+    .left-middle-pannel{
+        width: auto;
+        flex: none;
+        height:auto;
+        border-radius:30px
+    }
+    .coursereviews-style{
+        width: -webkit-fill-available;
+        height: 90px;
+        background: #EBEDF1 ;
+        border-radius: 20px;
+        color: #98989F;
+        margin: 1.5rem 0.5rem 0rem 0.5rem;
+        text-align: justify;
+    }
+
 }

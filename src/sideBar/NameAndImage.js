@@ -20,7 +20,7 @@ export function NameAndImage() {
                     <div className='column is-paddingless'>
                         <div className='circle'><span className='is-flex-row-center' >12</span></div>
                     </div>
-                    <div className='column'><div className='mi-arrow-left'/></div>
+                    <div className='column'><button className='button color-background-sidebar mi-arrow-left'style={{border:0}}/></div>
                     </div>
                 </div>
             </div>

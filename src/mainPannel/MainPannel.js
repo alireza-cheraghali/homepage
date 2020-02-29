@@ -5,7 +5,7 @@ import {BottomMiddlePannel} from "./BottomMiddlePannel";
 
 export function MainPannel() {
     return(
-       <div style={{position:"absolute",right:420,width:1060,margin:20,}}>
+       <div className='mainpannel-style' >
             <ChartPannel/>
             <MiddleMainPannel/>
             <BottomMiddlePannel/>
