@@ -1,14 +1,12 @@
 import React, {useState} from "react";
-
 export function Navbar() {
     var [clicked,setClicked]=useState('Home');
-    console.log(clicked)
     return(
-        <div className='color-background-sidebar columns wrapped-flex'style={{marginTop:51}}>
+        <div className='color-background-sidebar wrapped-flex'style={{marginTop:51}}>
             <div className='column has-text-weight-boldest is-size-5 is-12'style={{color:'#98989F'}}>
                 دم دستی
             </div>
-            <div className='column is-12'>
+            <div className='column is-12 is-12-mobile'>
                 <button className={clicked==='Home'?
                     'button is-flex-row-start navbar-style-clicked':
                     'button is-flex-row-start navbar-style'}
@@ -20,7 +18,7 @@ export function Navbar() {
                 </a>
                 </button>
             </div>
-            <div className='column is-12'>
+            <div className='column is-12 is-12-mobile'>
                 <button className={clicked==='Buy'?
                     'button is-flex-row-start navbar-style-clicked':
                     'button is-flex-row-start navbar-style'}
@@ -32,7 +30,7 @@ export function Navbar() {
                     </a>
                 </button>
             </div>
-            <div className='column is-12'>
+            <div className='column is-12 is-12-mobile'>
                 <button className={clicked==='SearchUser'?
                     'button is-flex-row-start navbar-style-clicked':
                     'button is-flex-row-start navbar-style'}
@@ -44,7 +42,7 @@ export function Navbar() {
                     </a>
                 </button>
             </div>
-            <div className='column is-12'>
+            <div className='column is-12 is-12-mobile'>
                 <button className={clicked==='Invite'?
                     'button is-flex-row-start navbar-style-clicked':
                     'button is-flex-row-start navbar-style'}
@@ -56,12 +54,13 @@ export function Navbar() {
                     </a>
                 </button>
             </div>
-            <div className='has-text-weight-boldest space-right space-bottom is-size-5 is-12'style={{color:'#98989F',marginTop:72}}>
+            <div style={{marginTop:72}}>
+            <div className='has-text-weight-boldest space-right space-bottom is-size-5 is-12'style={{color:'#98989F'}}>
                 میزکار
             </div>
             <nav className="navbar space-right space-top wrapped-flex color-background-sidebar">
-                <div className="navbar-item has-dropdown  is-hoverable space-top space-bottom">
-                    <a className=" columns has-text-black"style={{width:400}}>
+                <div className="navbar-item has-dropdown is-hoverable space-top space-bottom"style={{width:'-webkit-fill-available'}}>
+                    <a className=" columns has-text-black is-flex is-full-desktop"style={{width:'-webkit-fill-available'}}>
                         <span className='column is-flex-row-start has-text-weight-boldest is-font-size-15'>
                         ارزیابی
                         </span>
@@ -74,8 +73,8 @@ export function Navbar() {
                         </a>
                 </div>
                 </div>
-                <div className="navbar-item has-dropdown is-hoverable space-top space-bottom">
-                    <a className=" columns has-text-black"style={{width:400}}>
+                <div className="navbar-item has-dropdown is-hoverable space-top space-bottom"style={{width:'-webkit-fill-available'}}>
+                    <a className=" columns has-text-black is-flex"style={{width:'-webkit-fill-available'}}>
                         <span className='column is-flex-row-start has-text-weight-boldest is-font-size-15'>
                         آموزش
                         </span>
@@ -88,12 +87,12 @@ export function Navbar() {
                         </a>
                     </div>
                 </div>
-                <div className="navbar-item has-dropdown is-hoverable space-top space-bottom">
-                    <a className=" columns has-text-black"style={{width:400}}>
-                        <span className='column is-flex-row-start has-text-weight-boldest is-font-size-15'>
+                <div className="navbar-item has-dropdown is-hoverable space-top space-bottom"style={{width:'-webkit-fill-available'}}>
+                    <a className=" columns has-text-black is-flex"style={{width:'-webkit-fill-available'}}>
+                        <span className='column is-flex-row-start has-text-weight-boldest is-font-size-15 is-11'>
                         تحلیل و مشاوره
                         </span>
-                        <span className='mi-arrow-left is-flex-row-end'/>
+                        <span className='mi-arrow-left is-flex-row-end column'/>
                     </a>
 
                     <div className="navbar-dropdown">
@@ -102,8 +101,8 @@ export function Navbar() {
                         </a>
                     </div>
                 </div>
-                <div className="navbar-item has-dropdown is-hoverable space-top space-bottom">
-                    <a className=" columns has-text-black"style={{width:400}}>
+                <div className="navbar-item has-dropdown is-hoverable space-top space-bottom"style={{width:'-webkit-fill-available'}}>
+                    <a className=" columns has-text-black is-flex"style={{width:'-webkit-fill-available'}}>
                         <span className='column is-flex-row-start has-text-weight-boldest is-font-size-15'>
                       ثبت اطلاعات
                         </span>
@@ -117,6 +116,7 @@ export function Navbar() {
                     </div>
                 </div>
             </nav>
+            </div>
         </div>
     )
 }

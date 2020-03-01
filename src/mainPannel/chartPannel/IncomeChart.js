@@ -52,7 +52,7 @@ export function IncomeChart() {
         },
         series: [{
             showInLegend:false,
-            color:'white',
+            color:'#FFFFFF',
             data: getDataForChart
         }],
         responsive: {

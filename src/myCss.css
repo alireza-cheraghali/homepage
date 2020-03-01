@@ -158,6 +158,22 @@ font-size: 12px;
         margin: 1.5rem 0.5rem 0rem 0.5rem;
         text-align: justify;
     }
+    .navbar-style-clicked{
+        width: -webkit-fill-available;
+        height: 50px;
+        background: #212126 ;
+        border-radius: 25px;
+        color: white;
+        opacity: 1;
+    }
+    .navbar-style{
+        width: -webkit-fill-available;
+        height: 50px;
+        background: #FCFCFC ;
+        border-radius: 25px;
+        color: black;
+        opacity: 1;
+    }
 }
 @media screen and (width: 768px){
     .mainpannel-style{
@@ -187,6 +203,22 @@ font-size: 12px;
         color: #98989F;
         margin: 1.5rem 0.5rem 0rem 0.5rem;
         text-align: justify;
+    }
+    .navbar-style-clicked{
+        width: -webkit-fill-available;
+        height: 50px;
+        background: #212126 ;
+        border-radius: 25px;
+        color: white;
+        opacity: 1;
+    }
+    .navbar-style{
+        width: -webkit-fill-available;
+        height: 50px;
+        background: #FCFCFC ;
+        border-radius: 25px;
+        color: black;
+        opacity: 1;
     }
 
 }

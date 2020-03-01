@@ -1,19 +1,9 @@
-import React, {createContext, useContext, useEffect, useState} from "react";
+import  React, { useContext} from "react";
 import Highcharts from "highcharts";
 import HighchartsReact from "highcharts-react-official";
 import {sendDataToChart} from './ChartPannel'
-import axios from 'axios'
 export function ExamChart() {
     var giveDataFromChart=useContext(sendDataToChart)
-    /*var [number,setnumber]=useState();
-    useEffect(()=>{
-        axios.get('http://localhost:3001/chart').then(res=>{
-            const response=res.data.Numbers;
-            console.log(response);
-            setnumber(response)
-        });
-    },[]);*/
-
     const options={
         chart: {
             type: 'areaspline',

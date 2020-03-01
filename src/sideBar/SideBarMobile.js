@@ -14,9 +14,9 @@ export function SideBarMobile() {
                 <span className='mi-hamburger is-size-4'/>
                 </button>
                 <div>
-                   {/* <show.Provider value={clicked}>
-                        <SideBar/>
-                    </show.Provider>*/}
+                    <show.Provider value={clicked}>
+                       <SideBar/>
+                    </show.Provider>
                     {clicked === true &&
                         <div className='lolo'>
                             <button className='button space-bottom'style={{border:0}} onClick={()=>setClicked(!clicked)}>
